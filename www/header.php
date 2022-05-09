@@ -1,8 +1,11 @@
-
-
 <div class="header">
 	<h1>Funkino</h1>
-	<hr>
+	<h5><form action="site.php" method="post">
+			<input type="text" name="movieName">
+
+			<input type="submit">
+		</form></h5>
+
 </div>
 <style type="text/css">
 
