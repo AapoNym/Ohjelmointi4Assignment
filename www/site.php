@@ -35,7 +35,7 @@
 			echo $movies[$_POST["movieName"]];
 
 	 	?>
-	 	<?php include "footer.html" ?>
+	 	<?php include "footer.php" ?>
 	</div>
 </body>
 </html>
