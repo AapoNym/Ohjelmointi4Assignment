@@ -8,15 +8,18 @@ html{
 
 body{
     
+
     margin: 102px auto 50px auto;
     background-color: white;
     padding: 10px 0px 10px 10px;
     text-align: left;
+    overflow: auto;
 
 }
 
 p, li{
     margin: auto;
+
     font-size: 14px;
     color: black;
     line-height: 1.25;
@@ -64,6 +67,78 @@ button{
     margin-left: .5em;
 }
 
+/*-------------Teatterissa nyt site styling-----------*/
+.TeatterissaNyt img{
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    left:  200px;
+    width: 200px;
+    height: 200px;        
+}
+.TeatterissaNyt p{
+  font-size: xx-large;
+    font-weight: 900;
+    position: fixed;
+    left: 600px;
+}
+.TeatterissaNyt p1{
+    position: fixed;
+    left: 450px;
+    top: 160px;
+}
+.TeatterissaNyt p2{
+    position: fixed;
+    left: 450px;
+    top: 370px;}
+/*-------------New movies site styling-----------*/
+.UudetElokuvat img{
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    left:  200px;
+    width: 200px;
+    height: 200px;        
+}
+.UudetElokuvat p{
+  font-size: xx-large;
+    font-weight: 900;
+    position: fixed;
+    left: 600px;
+}
+.UudetElokuvat p1{
+    position: fixed;
+    left: 450px;
+    top: 160px;
+}
+.UudetElokuvat p2{
+    position: fixed;
+    left: 450px;
+    top: 370px;}
+/*-------------Category site styling-------------*/
+.categorySite img{
+    padding-right: 10px;
+    padding-left: 10px;
+    static: left;
+    width: 200px;
+    height: 200px;        
+}
+.categorySite p1{
+    font-size: xx-large;
+    font-weight: 900;
+    position: fixed;
+    left: 600px;
+}
+.categorySite p2{
+    position: fixed;
+    left: 450px;
+    top: 160px;
+}
+.categorySite p3{
+    position: fixed;
+    left: 450px;
+    top: 370px;
+}
 /*---------------Header styling----------------*/
 .header{
     border-width: 1px;
@@ -77,6 +152,7 @@ button{
     left: 0;
     height: 102px;
     z-index: 1;
+
 }
 
 .header img{
@@ -94,7 +170,12 @@ button{
     color: black;
     font-size: 60px;
 }
-
+.header h2{
+    font-size: x-large;
+    position: fixed;
+    right: 160px;
+    top: -5px;
+}
 .header h5{
     position: fixed;
     right: 0;
@@ -192,3 +273,4 @@ button{
 .moviePreview button:active{
     padding: 3px 4px 3px 6px;
 }
+
