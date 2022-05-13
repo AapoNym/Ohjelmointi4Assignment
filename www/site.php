@@ -13,6 +13,25 @@
 	<?php include "sidebar.php" ?>
 </head>
 <body>
+	<form action="site.php" method="post">
+		<div>
+    	<label for = "category"></label>
+    	<select name = "category" id = "category">
+    		<option value =""> --- Valitse kategoria --- </option>
+    		<option value="Komedia">Komedia</option>
+    		<option value="Toiminta">Toiminta</option>
+    		<option value="Kauhu">Kauhu</option>
+    		<option value="Lapsille">Lapsille</option>
+    	</select>
+   </div>
+   <div>
+    	<br><button type="submit">Lähetä</button>
+    	</div>
+    	<?php
+		$category = $_POST['category'];
+		echo $category;
+	 	?>
+ </form>
 	
 	
 	<main>
