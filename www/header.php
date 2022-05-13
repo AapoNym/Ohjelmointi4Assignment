@@ -10,10 +10,17 @@
 <style type="text/css">
 
 	.header {
-	padding: 10px;
-	text-align: center;
-	background: #25a5be;
-	color: black;
-	font-size: 30px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: black;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 102px;
+		text-align: center;
+		background-color: #25a5be;
+		color: black;
+		font-size: 30px;
 }
 </style>

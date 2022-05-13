@@ -1,32 +1,42 @@
 html{
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Anybody", cursive;
+    letter-spacing: 1px;
     background-color: #8DB8D2;
 }
 body{
-    width: 1000px;
+    
     margin: 0 auto;
     background-color: #CDE4F3;
-    padding: 0 20px 20px 20px;
+    padding: 118px 0 0 10px;
     border: 5px solid blackM;
+    text-align: left;
+
 }
 h1{
     margin: 0;
     padding: 20px 0;
     color: #333333;
-    text-shadow: 3px 3px 1px white;
+    text-shadow: 2px 2px 1px white;
     font-size: 60px;
     text-align: center;
 }
+h5{
+    position: relative;
+    top: -100px; left: 300px;
+    margin: 0;
+    font-size: 20px;
+    //width: 10px;
+}
 p, li{
-    font-size: 18px;
+    font-size: 20px;
     color: black;
     line-height: 2;
-    letter-spacing: 1px;   
+    letter-spacing: 2px;   
 }
 form{
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;

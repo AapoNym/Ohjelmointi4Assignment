@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="includes/css/style.css">
 	<?php include "header.php" ?>
 </head>
 <body>
 
 	<?php include "sidebar.php" ?>
 	
-	<div style="margin-left: 20%;">
+	<div style="margin-left: 10%;">
 
 		
 
@@ -35,7 +36,8 @@
 			echo $movies[$_POST["movieName"]];
 
 	 	?>
-	 	<?php include "footer.php" ?>
+	 	
 	</div>
+	<?php include "footer.php" ?>
 </body>
 </html>
