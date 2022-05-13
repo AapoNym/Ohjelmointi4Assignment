@@ -24,7 +24,7 @@
     		<option value="Kauhu">Kauhu</option>
     		<option value="Lapsille">Lapsille</option>
     	</select>
-    	<br><button type="submit">Lähetä</button>
+    	<button type="submit">Lähetä</button>
     	</div>
  </form>
 	
