@@ -1,7 +1,7 @@
-<div class="sidebar" style="width: 10%;">
+<div class="sidebar" style="width: 200px;">
 	<a href="#"	class="sidebar-item button">Etusivu</a><br>
-	<a href="#"	class="sidebar-item button">Elokuvat</a><br>
-	<a href="#"	class="sidebar-item button">Kauppa</a><br>
+	<a href="#"	class="sidebar-item button">Uusimmat Elokuvat</a><br>
+	<a href="#"	class="sidebar-item button">Teatterissa Nyt</a><br>
 </div>
 
 <style type="text/css">
@@ -26,7 +26,7 @@
 		border-width: 1px;
 		background-color: #cfbe88 ;
 		padding: 6px 6px 6px 16px;
-		font-size: 25px;
+		font-size: 20px;
 		display: block;
 		color: #222324;
 		text-decoration: none;

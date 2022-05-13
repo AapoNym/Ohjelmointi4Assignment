@@ -19,6 +19,7 @@
 		background: #25a5be;
 		color: black;
 		font-size: 15px;
+		overflow: hidden;
 	}
 </style>
 </div>

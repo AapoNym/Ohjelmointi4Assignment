@@ -3,26 +3,19 @@ html{
     font-family: "Anybody", cursive;
     letter-spacing: 1px;
     background-color: #8DB8D2;
+    margin: auto;
 }
 body{
     
-    margin: 0 auto;
-    background-color: #CDE4F3;
-    padding: 118px 0 0 10px;
-    border: 5px solid blackM;
+    margin: 102px auto 40px 0;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
     text-align: left;
 
 }
-h1{
-    margin: 0;
-    padding: 20px 0;
-    color: #333333;
-    text-shadow: 2px 2px 1px white;
-    font-size: 60px;
-    text-align: center;
-}
 h5{
     position: relative;
+    right: 0;
     top: -100px; left: 300px;
     margin: 0;
     font-size: 20px;
