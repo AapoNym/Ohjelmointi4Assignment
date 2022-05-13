@@ -1,25 +1,26 @@
 <footer class="footer">
 	<h3>Copyright 2022 Funkino</h3>
-<div>
-
 </footer>
+
 <style type="text/css">
 
-	.footer {
-		position: fixed;
-		padding: 5px 10px 10px 10px;
+	.footer{
+		padding: 0 0 0 0;
+		margin: auto;
+		position: relative;
 		border-width: 1px;
 		border-style: solid;
 		border-color: black;
-		bottom:  0;
+		bottom: 0;
 		right: 0;
-		height: 30px;
 		width: 100%;
-		text-align: right;
 		background: #25a5be;
-		color: black;
-		font-size: 15px;
-		overflow: hidden;
 	}
-</style>
-</div>
+
+	.footer h3{
+		padding: 0 10px 0 0;
+		text-align: right;
+		font-size: 20px;
+		color: black;
+	}
+	</style>
