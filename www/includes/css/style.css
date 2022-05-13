@@ -5,48 +5,39 @@ html{
     background-color: #8DB8D2;
     margin: auto;
 }
+
 body{
     
-    margin: 102px auto 40px 0;
+    margin: 102px auto 50px auto;
     background-color: white;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 10px;
     text-align: left;
 
 }
-h5{
-    position: relative;
-    right: 0;
-    top: -100px; left: 300px;
-    margin: 0;
-    font-size: 20px;
-    //width: 10px;
-}
+
 p, li{
-    font-size: 20px;
+    margin: auto;
+    font-size: 14px;
     color: black;
-    line-height: 2;
+    line-height: 1.25;
     letter-spacing: 2px;   
 }
+
 form{
     margin: 0 auto;
     width: 300px;
     padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+
 form li + li{
     margin-top: 1em;
 }
-label{
-    display: inline-block;
+
+label{    
     width: 90px;
     text-align: right;
 }
+
 input,
 textarea{
     font: 1em Anybody;
@@ -54,17 +45,150 @@ textarea{
     box-sizing: border-box;
     border: 1px solid #999
 }
+
 input:focus,
 textarea:focus{
     border-color: #000;
 }
+
 textarea{
     vertical-align: top;
     height: 5em;
 }
+
 .button{
     padding-left: 90px;
 }
+
 button{
     margin-left: .5em;
+}
+
+/*---------------Header styling----------------*/
+.header{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    position: fixed;
+    margin: auto;
+    background-color: #25a5be;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 102px;
+    z-index: 1;
+}
+
+.header img{
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+    width: 100px;
+    height: 100px;        
+}
+
+.header h1{ 
+    text-shadow: 1px 1px 1px white;      
+    padding: 0 0 0 10px;
+    text-align: left;
+    color: black;
+    font-size: 60px;
+}
+
+.header h5{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+/*-----------------Footer styling------------------*/
+.footer{
+    padding: 0 0 0 0;
+    margin: auto;
+    position: fixed;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    background: #25a5be;
+}
+
+.footer h3{
+    padding: 0 10px 0 0;
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+    color: black;
+}
+/*-----------------Sidebar styling----------------*/
+.sidebar {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 100%;
+    top:103px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #29b2cc;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: #cfbe88 ;
+    padding: 6px 6px 6px 16px;
+    font-size: 20px;
+    display: block;
+    color: #222324;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: black;
+    background-color: #e3cc81;
+}
+/*----------Category Form Styling--------------*/
+
+/*----------Movie preview-------------*/
+.moviePreview {
+    background-color: #d5d092 ;
+    margin: 10px;
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+
+}
+.moviePreview img{
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.moviePreview button{
+    background-color: #cfbe88;
+    border: 2px solid black;
+    padding: 3px 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: -37px;
+    right: 1px;
+    float: right;
+    position: relative;
+
+}
+.moviePreview button:hover{
+    background-color: #e3cc81;
+}
+.moviePreview button:active{
+    padding: 3px 4px 3px 6px;
 }
