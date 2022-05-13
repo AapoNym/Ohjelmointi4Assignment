@@ -15,7 +15,7 @@
 <body>
 	<form action="site.php" method="post">
 		<div>
-    	<label for = "category"></label>
+    	<label for = "categorySite.php"></label>
     	<select name = "category" id = "category">
     		<option value =""> --- Valitse kategoria --- </option>
     		<option value="Komedia">Komedia</option>
@@ -27,10 +27,6 @@
    <div>
     	<br><button type="submit">Lähetä</button>
     	</div>
-    	<?php
-		$category = $_POST['category'];
-		echo $category;
-	 	?>
  </form>
 	
 	
