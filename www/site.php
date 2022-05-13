@@ -13,9 +13,9 @@
 	<?php include "sidebar.php" ?>
 </head>
 <body>
-	<form action="site.php" method="post">
+	<form action="categorySite.php" method="post">
 		<div>
-    	<label for = "categorySite.php"></label>
+    	<label for = "category"></label>
     	<select name = "category" id = "category">
     		<option value =""> --- Valitse kategoria --- </option>
     		<option value="Komedia">Komedia</option>
