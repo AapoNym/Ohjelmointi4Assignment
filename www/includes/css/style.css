@@ -64,6 +64,54 @@ textarea{
 button{
     margin-left: .5em;
 }
+/*-------------Teatterissa nyt site styling-----------*/
+.TeatterissaNyt img{
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    left:  200px;
+    width: 200px;
+    height: 200px;        
+}
+.TeatterissaNyt p{
+  font-size: xx-large;
+    font-weight: 900;
+    position: fixed;
+    left: 600px;
+}
+.TeatterissaNyt p1{
+    position: fixed;
+    left: 450px;
+    top: 160px;
+}
+.TeatterissaNyt p2{
+    position: fixed;
+    left: 450px;
+    top: 370px;}
+/*-------------New movies site styling-----------*/
+.UudetElokuvat img{
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    left:  200px;
+    width: 200px;
+    height: 200px;        
+}
+.UudetElokuvat p{
+  font-size: xx-large;
+    font-weight: 900;
+    position: fixed;
+    left: 600px;
+}
+.UudetElokuvat p1{
+    position: fixed;
+    left: 450px;
+    top: 160px;
+}
+.UudetElokuvat p2{
+    position: fixed;
+    left: 450px;
+    top: 370px;}
 /*-------------Category site styling-------------*/
 .categorySite img{
     padding-right: 10px;
