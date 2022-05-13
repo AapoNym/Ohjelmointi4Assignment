@@ -6,11 +6,12 @@
 	<title></title>
 	<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="includes/css/style.css">
-	<?php include "header.php" ?>
-	<?php include "sidebar.php" ?>
 </head>
 <body>
- 
+  
+  <?php include "header.php" ?>
+	<?php include "sidebar.php" ?>
+  
    <main>
    	 <div style="margin-left: 200px;">
    	 	<div class="categorySite">
@@ -25,7 +26,6 @@
 	echo "<p3>Joker</p3>";
      }
 	?>
-    
     <?php
 	if ($category == "Kauhu"){
 		echo "<p1>Kategoria: Kauhu</p1>". "<br><br>" .

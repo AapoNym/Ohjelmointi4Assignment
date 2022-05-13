@@ -8,9 +8,10 @@ html{
 
 body{
     
-    margin: 102px auto auto auto;
+
+    margin: 102px auto 50px auto;
     background-color: white;
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 10px 10px;
     text-align: left;
     overflow: auto;
 
@@ -18,9 +19,10 @@ body{
 
 p, li{
     margin: auto;
-    font-size: 20px;
+
+    font-size: 14px;
     color: black;
-    line-height: 2;
+    line-height: 1.25;
     letter-spacing: 2px;   
 }
 
@@ -64,6 +66,7 @@ textarea{
 button{
     margin-left: .5em;
 }
+
 /*-------------Teatterissa nyt site styling-----------*/
 .TeatterissaNyt img{
     padding-right: 10px;
@@ -136,7 +139,6 @@ button{
     left: 450px;
     top: 370px;
 }
-
 /*---------------Header styling----------------*/
 .header{
     border-width: 1px;
@@ -149,6 +151,8 @@ button{
     top: 0;
     left: 0;
     height: 102px;
+    z-index: 1;
+
 }
 
 .header img{
@@ -159,7 +163,8 @@ button{
     height: 100px;        
 }
 
-.header h1{        
+.header h1{ 
+    text-shadow: 1px 1px 1px white;      
     padding: 0 0 0 10px;
     text-align: left;
     color: black;
@@ -181,18 +186,20 @@ button{
 .footer{
     padding: 0 0 0 0;
     margin: auto;
-    position: relative;
+    position: fixed;
     border-width: 1px;
     border-style: solid;
     border-color: black;
     bottom: 0;
     right: 0;
     width: 100%;
+    height: 50px;
     background: #25a5be;
 }
 
 .footer h3{
     padding: 0 10px 0 0;
+    position: relative;
     text-align: right;
     font-size: 20px;
     color: black;
@@ -228,3 +235,42 @@ button{
     color: black;
     background-color: #e3cc81;
 }
+/*----------Category Form Styling--------------*/
+
+/*----------Movie preview-------------*/
+.moviePreview {
+    background-color: #d5d092 ;
+    margin: 10px;
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+
+}
+.moviePreview img{
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+.moviePreview button{
+    background-color: #cfbe88;
+    border: 2px solid black;
+    padding: 3px 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    top: -37px;
+    right: 1px;
+    float: right;
+    position: relative;
+
+}
+.moviePreview button:hover{
+    background-color: #e3cc81;
+}
+.moviePreview button:active{
+    padding: 3px 4px 3px 6px;
+}
+
