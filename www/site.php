@@ -17,6 +17,7 @@
 	<?php include "sidebar.php" ?>
 	<?php include "movie.php" ?>
 
+
 	<?php $movies = array(); ?>
 	<?php 
 		$movies[0] = new Movie("images/moviePosters/Avengers.jpg", "The Avengers", "Joss Whedon", "Toiminta", 16, "8/10", "TBW");
@@ -53,6 +54,7 @@
 	 	</form>
 	</div>
 
+
 	<?php
 	$filteredMovies = array_filter($movies, function($movie){
 		if(isset($_POST['search'])){
@@ -60,12 +62,14 @@
 		}
 	});	
 	?>
+
 	<main>
 		<div style="margin-left: 200px;">	
 			<br>
 			<hr><br>
 			<div class="grid-container">
 				
+
 				<?php if(isset($_POST['submitted'])): ?>
 					<?php foreach ($filteredMovies as $x => $value): ?>
 						<div class="moviePreview">
