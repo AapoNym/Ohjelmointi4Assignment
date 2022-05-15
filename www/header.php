@@ -7,9 +7,11 @@
 	</h1>
 	<h2>Hae elokuvaa</h2>
 	<h5><form action="site.php" method="post">
-			<input type="text" placeholder="Kirjoita tähän">
-
-			<input type="submit" value="Hae">
+			<input type="text" name="search" placeholder="Kirjoita tähän">
+			<input type="submit" name="submitted" value="Hae">
+			<?php if (isset($_POST['search'])): ?>
+				Haetaan elokuvia sanalla: <?php echo $_POST['search']?>
+			<?php endif ?>
 		</form>
 	</h5>	
 </div>
