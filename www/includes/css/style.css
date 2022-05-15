@@ -238,7 +238,7 @@ button{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid gap: 10px;
+    grid-gap: 10px;
 }
 /*----------Movie preview-------------*/
 .moviePreview {
@@ -276,4 +276,3 @@ button{
 .moviePreview button:active{
     padding: 3px 4px 3px 6px;
 }
-
