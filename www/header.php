@@ -6,7 +6,7 @@
 	   Funkino
 	</h1>
 	<h2>Hae elokuvaa</h2>
-	<h5><form action="site.php" method="post">
+	<h5><form action="index.php" method="post">
 			<input type="text" name="search" placeholder="Kirjoita tähän">
 			<input type="submit" name="submitted" value="Hae">
 			<?php if (isset($_POST['search'])): ?>
