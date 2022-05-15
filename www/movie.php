@@ -2,6 +2,7 @@
 <<?php 
 	class Movie {
 
+		private $imgPath = "null";
 		private $name = "null";
 		private $director = "null";
 		private $category = "null";
@@ -10,7 +11,8 @@
 		private $description = "null";
 
 		
-	public function __construct($name, $director, $category, $ageRating, $imdbRating, $description){
+	public function __construct($imgPath, $name, $director, $category, $ageRating, $imdbRating, $description){
+		$this->imgPath=$imgPath;
 		$this->name=$name;
 		$this->director=$director;
 		$this->category=$category;
@@ -20,7 +22,6 @@
 	}
 
 	public function displayMovie(){
-
 		echo "<h3> Title: " . $this->name . "</h3>";
 		echo "<h4> Director(s): " . $this->director . "</h4>";
 		echo "<p> Category: " . $this->category . "</p>";
@@ -29,6 +30,7 @@
 		echo "<p> Description: " . $this->description . "</p>";
 	}
 	
+
     /**
      * @return mixed
      */
@@ -145,6 +147,26 @@
     public function setDescription($description)
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getImgPath()
+    {
+        return $this->imgPath;
+    }
+
+    /**
+     * @param mixed $imgPath
+     *
+     * @return self
+     */
+    public function setImgPath($imgPath)
+    {
+        $this->imgPath = $imgPath;
 
         return $this;
     }
