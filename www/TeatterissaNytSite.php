@@ -1,4 +1,4 @@
-<?php include "article-header.php";?>
+<?php include "movie.php";?>
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html>
