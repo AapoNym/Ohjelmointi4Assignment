@@ -29,7 +29,7 @@
 	?>
        <?php
 	$_SESSION["movieAvengers"] = $movies[0];
-	$_SESSION["movieBeemovie"] = $movies[1];
+	$_SESSION["movieBeeMovie"] = $movies[1];
 	$_SESSION["movieJoker"] = $movies[2];
 	$_SESSION["movieBridgetJones"] = $movies[3];
 	$_SESSION["movieNightmareOnElmStreet"] = $movies[4];
