@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +26,14 @@
 		$movies[4] = new Movie("images/moviePosters/NightmareOnElmStreet.jpg", "Nightmare on Elm street", "Wes Craven", "Kauhu", 18, "7.4/10", "TBW");
 		$movies[5] = new Movie("images/moviePosters/ScaryMovie.jpg", "Scary Movie", "Keenen Ivory Wayans", "Kauhu, Komedia", 14, "6.2/10", "TBW");
 	?>
-
+       <?php
+	$_SESSION["movieAvengers"] = $movies[0];
+	$_SESSION["movieBeemovie"] = $movies[1];
+	$_SESSION["movieJoker"] = $movies[2];
+	$_SESSION["movieBridgetJones"] = $movies[3];
+	$_SESSION["movieNightmareOnElmStreet"] = $movies[4];
+	$_SESSION["movieScaryMovie"] = $movies[5];
+	?>
 	<div class="category">
 		<form action="categorySite.php" method="post">
 			<div>
@@ -36,6 +44,7 @@
 	    			<option value="Toiminta">Toiminta</option>
 	    			<option value="Kauhu">Kauhu</option>
 	    			<option value="Lapsille">Lapsille</option>
+				<option value="Draama">Draama</option>
 	    		</select>
 	  		</div>
 	   		<div>
