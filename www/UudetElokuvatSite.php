@@ -1,3 +1,5 @@
+<?php include "article-header.php";?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,16 +12,33 @@
 	<?php include "sidebar.php" ?>
 </head>
 <body>
-	<div class="UudetElokuvat">
-	<p> UUDET ELOKUVAT</p><br><br>
-	<img src='images/moviePosters/Joker.jpg' alt='Logo'>
-	<p1>Joker</p1>
+<main>
+	 <div style="margin-left: 200px;">
+
+	<p1> UUDET ELOKUVAT</p1><br><br>
+
+    <?php	$movieAvengers = $_SESSION["movieAvengers"];?>
+
+	<div class='moviePreview'>
+		<img src='images/moviePosters/Avengers.jpg' alt='Logo'>
+    <?php
+	$movieAvengers->displayMovie();
+	?>
+	<button>Liput -></button>
+	</div>
 	<br>
-	<img src='images/moviePosters/Avengers.jpg' alt='Logo'>
-	<p2>Avengers</p2>
+	<div class="moviePreview">
+		<img src="images/moviePosters/Joker.jpg">
+		<?php 
+		 $movieJoker = $_SESSION["movieJoker"];
+		$movieJoker->displayMovie();?>
+		<button>Liput -></button>
+	</div>
 
 	<?php include "footer.php" ?>
     
 </div>
+</main>
  </body>
  </html>
+
