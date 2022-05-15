@@ -7,9 +7,9 @@
 	</h1>
 	<h2>Hae elokuvaa</h2>
 	<h5><form action="site.php" method="post">
-			<input type="text" name="movieName">
+			<input type="text" placeholder="Kirjoita tähän">
 
-			<input type="submit">
+			<input type="submit" value="Hae">
 		</form>
 	</h5>	
 </div>

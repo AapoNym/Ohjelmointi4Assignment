@@ -235,8 +235,12 @@ button{
     color: black;
     background-color: #e3cc81;
 }
-/*----------Category Form Styling--------------*/
-
+/*----------Grid--------------*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid gap: 10px;
+}
 /*----------Movie preview-------------*/
 .moviePreview {
     background-color: #d5d092 ;

@@ -14,7 +14,9 @@
 
 	<?php include "header.php" ?>
 	<?php include "sidebar.php" ?>
-	<?php include "article-header.php" ?>
+	<?php include "movie.php" ?>
+
+	
 
 	<div class="category">
 		<form action="categorySite.php" method="post">
@@ -34,28 +36,26 @@
 	 	</form>
 	</div>
 	
-	
+	<<?php $movies = array() ?>
 	<main>
-		<div style="margin-left: 200px;">
-		
-
+		<div style="margin-left: 200px;">	
 			<br>
-			<p>
+			<hr><br>
+			<div class="grid-container">
 				<div class="moviePreview">
-
 					<img src="images/moviePosters/Avengers.jpg">
 					<?php 
-						$movieAvengers = new Movie("The Avengers", "Joss Whedon", "Action", 16, "8/10", "TBD");
-						$movieAvengers->displayMovie();
+						$movies[0] = new Movie("The Avengers", "Joss Whedon", "Toiminta", 16, "8/10", "TBW");
+						$movies[0]->displayMovie();
 					?>
 					<button>Liput -></button>
-						</div>
+				</div>
 				<div class="moviePreview">
 
 					<img src="images/moviePosters/BeeMovie.jpg">
 					<?php 
-						$movieBeeMovie = new Movie("Bee Movie", "Simon J. Smith", "Lapsille", 7, "6.1/10", "TBD");
-						$movieBeeMovie->displayMovie();
+						$movies[1] = new Movie("Bee Movie", "Simon J. Smith", "Lapsille", 7, "6.1/10", "TBW");
+						$movies[1]->displayMovie();
 					?>
 					<button>Liput -></button>
 				</div>
@@ -63,8 +63,8 @@
 
 					<img src="images/moviePosters/Joker.jpg">
 					<?php 
-						$movieJoker = new Movie("Joker", "Todd Phillips", "Draama", 16, "8.4/10", "TBD");
-						$movieJoker->displayMovie();
+						$movies[2] = new Movie("Joker", "Todd Phillips", "Draama, Jännitys", 16, "8.4/10", "TBW");
+						$movies[2]->displayMovie();
 					?>
 					<button>Liput -></button>
 				</div>
@@ -72,40 +72,33 @@
 
 					<img src="images/moviePosters/BridgetJones.jpg">
 					<?php 
-						$movieBridgetJones = new Movie("Bridget Jones", "Sharon Maguire", "Komedia", 11, "6.7/10", "TBD");
-						$movieBridgetJones->displayMovie();
+						$movies[3] = new Movie("Bridget Jones", "Sharon Maguire", "Komedia , Romanttinen", 11, "6.7/10", "TBW");
+						$movies[3]->displayMovie();
 					?>
 					<button>Liput -></button>
 				</div>
 				<div class="moviePreview">
 					<img src="images/moviePosters/NightmareOnElmStreet.jpg">
 					<?php 
-						$movieNightmareOnElmStreet = new Movie("Nightmare on Elm street", "Wed Craven", "Kauhu", 18, "7.4/10", "TBD");
-						$movieNightmareOnElmStreet->displayMovie();
+						$movies[4] = new Movie("Nightmare on Elm street", "Wes Craven", "Kauhu", 18, "7.4/10", "TBW");
+						$movies[4]->displayMovie();
 					?>
 					<button>Liput -></button>
 				</div>
 				<div class="moviePreview">
 					<img src="images/moviePosters/ScaryMovie.jpg">
 					<?php 
-						$movieScaryMovie = new Movie("Scary Movie", "Keenen Ivory Wayans", "Kauhu", 14, "6.2/10", "TBD");
-						$movieScaryMovie->displayMovie();
+						$movies[5] = new Movie("Scary Movie", "Keenen Ivory Wayans", "Kauhu, Komedia", 14, "6.2/10", "TBW");
+						$movies[5]->displayMovie();
 					?>
 					<button>Liput -></button>
-
-					
-					
 				</div>
-
-			</p>
-
-			
+			</div>
 		</div>
 	
 	</main>
-	
-	
 </body>
+
 
 <?php include "footer.php"  ?>
 </html>

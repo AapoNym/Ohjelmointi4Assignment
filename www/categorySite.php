@@ -9,11 +9,12 @@
 </head>
 <body>
   
-  <?php include "header.php" ?>
+  	<?php include "header.php" ?>
 	<?php include "sidebar.php" ?>
   
    <main>
    	 <div style="margin-left: 200px;">
+
    	 	<div class="categorySite">
 	<?php
 	$category = $_POST['category'];
